@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiRestApplication<ApiRest>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pegmatita.ApiRest.ApiRestApplication",
+            "projectName": "ApiRest",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
