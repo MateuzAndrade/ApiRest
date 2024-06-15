@@ -26,7 +26,7 @@ public class BancoMusicMariaDB {
     public DataSource MusicDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.mariadb.jdbc.Driver");
-        dataSource.setUrl("jdbc:mariadb://localhost:3307/maria");
+        dataSource.setUrl("jdbc:mariadb://localhost:3307/APIRestMariaDB");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;

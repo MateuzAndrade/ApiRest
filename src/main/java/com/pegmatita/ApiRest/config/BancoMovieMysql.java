@@ -38,7 +38,7 @@ public class BancoMovieMysql {
             @Qualifier("MovieDataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.pegmatita.ApiRest.repository.movie")
+                .packages("com.pegmatita.ApiRest.model.movie")
                 .persistenceUnit("Music")
                 .build();
     }
