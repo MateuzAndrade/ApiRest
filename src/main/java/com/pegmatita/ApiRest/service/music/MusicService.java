@@ -1,5 +1,5 @@
 package com.pegmatita.ApiRest.service.music;
 
-public class MovieService {
+public class MusicService {
 
 }

@@ -3,6 +3,9 @@ package com.pegmatita.ApiRest.model.music;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,13 +28,16 @@ public class Disc {
     @Column(nullable=false)
     private String name;
 
-    @Column(nullable = false)    
+    @Column(nullable = false) 
+    @JsonProperty("dateLaunch")   
     private Date launch;
 
     @OneToMany
+    @JsonIgnore
     private List<Music> musics;
 
     @ManyToOne
+    @JsonProperty("artists")
     private Artist artist;
 
 }
