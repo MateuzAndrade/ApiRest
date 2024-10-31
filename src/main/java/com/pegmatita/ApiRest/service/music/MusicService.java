@@ -1,6 +1,7 @@
 package com.pegmatita.ApiRest.service.music;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.pegmatita.ApiRest.model.music.Artist;
 import com.pegmatita.ApiRest.model.music.Disc;
@@ -11,6 +12,7 @@ import com.pegmatita.ApiRest.repository.music.MusicRepository;
 
 import jakarta.transaction.Transactional;
 
+@Service
 public class MusicService {
 
     @Autowired
