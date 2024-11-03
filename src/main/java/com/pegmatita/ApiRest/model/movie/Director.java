@@ -2,6 +2,8 @@ package com.pegmatita.ApiRest.model.movie;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,7 @@ public class Director {
     @Column(nullable= false)
     private String name;
 
+    @JsonBackReference
     @OneToMany(mappedBy="director")
     private List<Movie> movies;
 
