@@ -1,9 +1,11 @@
 package com.pegmatita.ApiRest;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.context.ActiveProfiles;
 
-@SpringBootTest
+@DataJpaTest
+@ActiveProfiles("teste")
 class ApiRestApplicationTests {
 
 	@Test

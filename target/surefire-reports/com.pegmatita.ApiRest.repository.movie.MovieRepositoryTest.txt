@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.pegmatita.ApiRest.repository.movie.MovieRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.624 s -- in com.pegmatita.ApiRest.repository.movie.MovieRepositoryTest
